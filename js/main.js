@@ -6,7 +6,11 @@
 
   /* ---------- logo oficial vetorizada (monograma FT + FAUSTTINO + TATTOO) ---------- */
   function svg(vb, corpo) { return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="' + vb + '" fill-rule="evenodd">' + corpo + '</svg>'; }
-  function parte(p, x, y, cor, s) { s = s || 1; return '<path fill="' + cor + '" transform="translate(' + x + ' ' + y + ') scale(' + s + ')" d="' + p.d + '"/>'; }
+  var SOMBRA = '#8f6c2a';
+  function parte(p, x, y, cor, s) {
+    s = s || 1; var t = ' transform="translate(' + x + ' ' + y + ') scale(' + s + ')"';
+    return '<path fill="' + cor + '"' + t + ' d="' + p.d + '"/>' + (p.ds ? '<path fill="' + SOMBRA + '"' + t + ' d="' + p.ds + '"/>' : '');
+  }
   // vertical: monograma em cima, nome e TATTOO embaixo, tudo no eixo
   function logoV() {
     var m = L.mono, n = L.nome, s = L.sub, W = Math.max(n.w, s.w), gap1 = 46, gap2 = 34;
