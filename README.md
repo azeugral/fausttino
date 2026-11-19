@@ -4,7 +4,7 @@ Prévia de site para o Fausttino (@fausttinotattoo), tatuador de realismo em Tan
 Publicada em https://azeugral.github.io/fausttino/ (noindex).
 
 - **Hero:** galeria no chão (modelo Veríssimo) em preto e ouro, com as peças dele; cada quadro troca a peça coberta em tinta. WebGL no PC (`js/galeria.js`), MP4 no celular (`img/galeria/galeria.mp4`, gerado por `tools/gerar_galeria.py`).
-- **Logo:** oficial (monograma FT + FAUSTTINO + TATTOO), vetorizada de um story em `js/logo.js` (`tools/logo.py`).
+- **Logo:** monograma FT gótico enviado (`_ref/marca/monograma-novo.webp`, ouro + chanfro #8f6c2a) + FAUSTTINO + TATTOO do story, em `js/logo.js` (`tools/logo.py`).
 - **Adornos:** ramo fineline (post 059) e sol e lua (post 046), traço dele (`tools/orn.py`).
 - **Fontes:** Cinzel (títulos, mesma família da logo) + Hanken Grotesk.
 - **Orçamento:** formulário → WhatsApp 5565993607381.
